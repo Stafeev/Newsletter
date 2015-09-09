@@ -9,6 +9,61 @@
 
 
 </head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function jqUpdateSize(){
+        // Get the dimensions of the viewport
+        var width = $(window).width();
+        var height = $(window).height();
+        
+        $('#jqWidth').html(width);      // Display the width
+        $('#jqHeight').html(height);    // Display the height
+        if (width<600)
+        {
+            $( '#img1' ).remove();
+            $( '#img2' ).remove();
+            $( '#img3' ).remove();
+            $( '#img4' ).remove();
+            $('.update').css('margin-left','0');
+            $('#leftText').css('padding-right','0');
+            $('#rightText').css('padding-left','0');
+            $('#updatesTable').css('margin-bottom','10px');
+            var text="<table class=collapse cellpadding=0 cellspacing=0 style='padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;width:100%; border-spacing: 4px;'>";
+            text+="<tr style='margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;'>";
+			text+="<td style='margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;'>";						
+            text+="<img src='https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/14ce711e-7e89-4b52-8ed4-eba965fbd083.png' style='margin-top:0;margin-bottom:10px;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%;'>";
+            text+="</td>";
+            text+="<td style='margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;'>";						
+            text+="<img src='https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/2e199aee-7040-4333-b962-2647ab995b9e.png' style='margin-top:0;margin-bottom:10px;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%;'>";
+            text+="</td>";
+            text+="</tr>";
+            text+="</table>";
+            
+            
+            var text2="<tr style='margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;'>";
+			text2+="<td style='margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;'>";						
+            text2+="<img src='https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/47ffb549-bbfd-4ad6-947d-607872a4e535.jpg'style='margin-top:0;margin-bottom:10px;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:5px;padding-left:0;max-width:100%;width:100%;>";
+            text2+="</td>";
+            text2+="<td style='margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;'>";						
+            text2+="<img src='https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/8ade5055-ca09-476c-8c34-3f98d6dfa826.jpg' style='margin-top:0;margin-bottom:10px;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%;'>";
+            text2+="</td>";
+            text2+="</tr>";
+            $( '#cg1' ).remove();
+            $( '#cg2' ).remove();
+            
+            $("#imgMobile1").html(text);
+            $("#imgMobile2").html(text2);
+        }
+        else
+        {
+            $('.update').css('margin-left','20px');
+            $('#leftText').css('padding-right','80px');
+            $('#rightText').css('padding-left','15px');
+        }
+    };
+    $(document).ready(jqUpdateSize);    // When the page first loads
+    $(window).resize(jqUpdateSize);     // When the browser changes size
+</script>
 
 <body bgcolor="#FFFFFF" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;width:100%!important;height:100%;">
 
@@ -58,7 +113,7 @@
 		<tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 			<td align="center" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 				<a href="http://thesiscouture.com/" title="Thesis Couture | Style Without Sacrifice" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;color:#68a9a7;text-decoration:none;">
-					<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/0952783f-5e89-4cf6-bf6a-e86cecaf63f5.jpg" alt="Thesis Couture | Style Without Sacrifice" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;">
+					<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/ea806005-d394-428d-a234-2e18777dea8f.jpg" alt="Thesis Couture | Style Without Sacrifice" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;max-width:720px">
 				</a>
 			</td>
 		</tr>
@@ -79,11 +134,8 @@
 								<p class="date" style="margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-size:15px;line-height:1.4;text-transform:uppercase;font-weight:500;color:#68a9a7;margin-top:20px;margin-bottom:5px;">
 									September 2015
 								</p>
-								<h3 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:10px;color:#323743;font-weight:700;font-size:18px;">
-									Hello Team Thesis
-								</h3>
-								<p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378">
-									Welcome to the world's most exclusive shoe club!
+								<p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;">
+									Hello Team Thesis,
 								</p>
                                 <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;text-align: justify;">
 									It’s been almost 100 years since any serious innovation has taken place in fashion footwear, so two years ago we set out to take lessons from technology and combine them with the love of fashion. 
@@ -95,7 +147,7 @@
 									Shoes hold a special place in our lives, and we want Thesis to have a very special place in your life; by bringing you beautiful pieces designed with a creative perspective, and scientifically engineered to be better for your body.
 								</p>
                                 <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;text-align: justify;">
-									We’re getting close to releasing our debut design, a limited edition run of 1,500 signed and numbered units; the world’s first high performance high heels.™ 
+                                    We’re getting close to releasing our debut design, a limited edition run of 1,500 signed and numbered units; <i>the world’s first high performance high heels.™</i>
 								</p>
                                 <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;text-align: justify;">
 									We are incredibly excited about the next few months and can’t wait to share more soon.
@@ -110,47 +162,70 @@
 						</tr>
 					</table>
                     
+                    <div id="imgMobile1">
+                    </div>
                     
                     <!-- Updates --> 
-                        <table class="body-wrap" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;">
+                        <table id="updatesTable" class="body-wrap" style="margin-top:0;margin-bottom:25px;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;">
 		<tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 			<td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"></td>
 			<td class="container" bgcolor="#eff3fc" cellspacing="0" cellpadding="0" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block!important;max-width:720px!important;margin-top:0 !important;margin-bottom:0 !important;margin-right:auto !important;margin-left:auto !important;clear:both!important;">
 
 					<table  class="body-wrap" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;">
-                        <colgroup>
-    <col span="1" style="width: 87%" />
-    <col span="1" style="width: 13%" />
+                        <colgroup id="cg1">
+    <col span="1" style="width: 70%" />
+    <col span="1" style="width: 30%" />
   </colgroup>
                         
 						<tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-							<td rowspan=2 valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+							<td id="leftText" rowspan=2 valign="middle" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:80px;padding-left:0;">
                                 <p class="date" style="margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-size:15px;line-height:1.4;text-transform:uppercase;font-weight:500;color:#68a9a7;margin-top:0px;margin-bottom:5px;">
 									Updates
 								</p>
                                 <ul style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;margin-bottom:15px;font-weight:normal;font-size:15px;line-height:1.4;">
-									<li style="margin-top:0;margin-right:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-left:20px;margin-bottom:15px;list-style-position:outside; color:#6e7378;">
-										Our product team: an unprecedented group of experts across fashion and technology is busy working on R&D. Our shoes have proprietary internal architecture, designed to make stilettos structurally feel and function more like wedges.
+									<li class="updates" style="margin-top:0;margin-right:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-left:20px;margin-bottom:15px;list-style-position:outside; color:#6e7378;">
+                                        <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+										Our product team:
+                                        </p>
+                                        <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+										An unprecedented group of experts across fashion and technology is busy working on R&D.
+                                        </p>
+                                         <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+									Our shoes have proprietary internal architecture, designed to make stilettos structurally feel and function more like wedges.
+								</p>
 									</li>
-									<li style="margin-top:0;margin-right:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-left:20px;margin-bottom:15px;list-style-position:outside; color:#6e7378;">
-										Our first lookbook: created by our guest designer, a amazing artist from one of the world’s most prestigious brands, will be showcased in a series of invite-only events, this fall in the following cities; Los Angeles, San Francisco, Chicago, New York, Atlanta and Miami. 
+									<li class="updates" style="margin-top:0;margin-right:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-left:20px;margin-bottom:15px;list-style-position:outside; color:#6e7378;">
+                                        <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+										Our first lookbook:
+                                            </p>
+                                        <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+										Created by our guest designer, a amazing artist from one of the world’s most prestigious brands, will be showcased in a series of invite-only events, this fall in the following cities: 
+                                            </p>
+                                        <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+									Los Angeles, San Francisco, Chicago, New York, Atlanta and Miami.
+								</p>
                                         <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
 									We’ll share more information on the events and the lookbook in our next update. In the meantime, we have included a sneak peak of 2 of the 20 looks from the book for you.
 								</p>
 									</li>
-									<li style="margin-top:0;margin-right:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-left:20px;margin-bottom:15px;list-style-position:outside; color:#6e7378;">
-									Press: Thesis has garnered a remarkable amount of media attention.  Check out the links below to see some of the coverage. 
+									<li class="updates" style="margin-top:0;margin-right:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-left:20px;margin-bottom:15px;list-style-position:outside; color:#6e7378;">
+                                         <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+									Press: 
+                                        </p>
+                                        <p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378;" >
+									Thesis has garnered a remarkable amount of media attention. Check out the links below to see some of the coverage.
+                                        </p>
 									</li>
 								</ul>
 									</td>
-                            <td  style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/3c4a27ac-e88c-4316-8ad1-d7465f6454b9.png" alt="Thesis Couture on Instagram" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%">
+                            <td id='img1' style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/14ce711e-7e89-4b52-8ed4-eba965fbd083.png" alt="Thesis Couture on Instagram" style="margin-top:0;margin-bottom:10px;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%;">
 									</td>
 						</tr>
         
            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-            <td  style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/fdcc6807-c29b-4090-8f6d-254a7a812cad.png" alt="Thesis Couture on Instagram" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%">
+            <td id='img2' style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/2e199aee-7040-4333-b962-2647ab995b9e.png" alt="Thesis Couture on Instagram" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%;">
 									</td>
 						</tr>
 					</table> 
@@ -182,20 +257,23 @@
                                 <h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:10px;color:#323743;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:-.5px;">
 										Dolly Singh
 										<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-										<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
+										<p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:15px; color:#6e7378; text-align: justify;">
 											Founder
-										</small>
-								
+										</p>
 							</h4>
+                                <div id="imgMobile2">
+                                </div>
                                 <h3 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:18px;text-transform:uppercase;">
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0; color:#323743">Media Attention</h3>
 								<p class="lead" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;line-height:1.4;font-size:15px;margin-bottom:10px; color:#6e7378; text-align: justify;">
-									In Q2 2015, we garnered a tremendous amount of press coverage for our product and story. This shows how thirsty the market space is for our revolutionary approach to a problem that has not been addressed since the dawn of the modern stiletto.
+									In Q2 2015, we garnered a tremendous amount of press coverage for our product and story. This shows how excited the market space is for our revolutionary approach to a problem that has not been addressed since the dawn of the modern stiletto.
 								</p>
 								</td>
 						</tr>
 					</table>
 				</div>
+                <div id="imgMobile2">
+                </div>
 				<!-- /Introduction Section -->
 			</td>
 			<td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"></td>
@@ -208,20 +286,19 @@
 			<td class="container" bgcolor="#eff3fc" cellspacing="0" cellpadding="0" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;display:block!important;max-width:720px!important;margin-top:0 !important;margin-bottom:0 !important;margin-right:auto !important;margin-left:auto !important;clear:both!important;">
 				<!-- Introduction Section -->
 				<div class="content" style="padding-top:0;padding-bottom:0;padding-right:20px;padding-left:20px;max-width:680px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;display:block;">
-					<table  class="body-wrap" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;">   
+					<table  class="body-wrap" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;"> 
+                        <colgroup id="cg2">
     <col style="width: 40%" />
     <col style="width: 60%" />
+                        </colgroup>
         <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-							<td valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/09f82b9c-faad-41e8-b5a6-db49bcc8a87e.jpg" alt="Thesis Couture on Instagram" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%">
+							<td id="img3" valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/47ffb549-bbfd-4ad6-947d-607872a4e535.jpg" alt="Thesis Couture on Instagram" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100%">
 									</td>
-            <td rowspan=2 valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:15px;">
+            <td id="rightText" rowspan=2 valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:15px;">
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									Bloomberg
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										4/29/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;color:#323743">
 									<a href="http://www.bloomberg.com/news/videos/2015-04-29/rocket-scientists-are-inventing-a-new-high-heel" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -231,9 +308,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									New York Post
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										5/3/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;color:#323743">
 									<a href="http://nypost.com/2015/05/03/these-high-performance-heels-wont-kill-your-feet/" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -243,9 +317,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									Vator News
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										5/16/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://vator.tv/news/2015-05-16-meet-thesis-couture-creator-of-a-new-kind-of-high-heel" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -255,9 +326,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									Business Insider
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										6/2/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://www.businessinsider.com/spacexs-dolly-singh-remakes-high-heels-with-thesis-couture-2015-6" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -267,9 +335,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									Geekwire
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										6/3/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://www.geekwire.com/2015/space-age-heels-how-spacexs-rocket-science-is-inspiring-a-better-shoe/" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -279,9 +344,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									refinery29
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										6/7/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://www.refinery29.com/2015/06/88640/comfortable-high-heels"  target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -291,9 +353,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									CBS News
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										5/23/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://www.cbsnews.com/news/thesis-couture-ceo-dolly-singh-aims-to-re-engineer-high-heel-shoes/" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -307,9 +366,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									Newsweek Europe
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										4/17/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://europe.newsweek.com/rocket-scientists-are-turning-fashion-create-revolutionary-stiletto-322915" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -319,9 +375,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									News.com Australia
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										5/4/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://www.news.com.au/lifestyle/fashion/high-heels-that-wont-hurt-yes-please/story-fnjev30n-1227334518214" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -331,9 +384,6 @@
 								<h4 style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;line-height:1.1;margin-bottom:0px;color:#323743;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:-.5px;">
 									Cosmopolitan UK
 									<br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-									<small style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:60%;color:#6f6f6f;line-height:1.3;text-transform:none;font-weight:300;">
-										5/6/2015
-									</small>
 								</h4>
 								<p class="callout last" style="margin-top:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-family:'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;font-weight:normal;font-size:15px;line-height:1.4;margin-bottom:5px;">
 									<a href="http://www.cosmopolitan.co.uk/fashion/style/news/a35512/rocket-scientists-are-designing-a-new-high-heel-comfortable/" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-decoration:none;font-weight:bold;color:#68a9a7;">
@@ -346,7 +396,7 @@
 									</td>
             </tr>
            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-            <td  valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+            <td  id="img4" valign="top" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 								<img src="https://gallery.mailchimp.com/0f3717f0beda6bf958920e2bd/images/8ade5055-ca09-476c-8c34-3f98d6dfa826.jpg" alt="Thesis Couture" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;max-width:100%;width:100% ">
 									</td>
 						</tr>
